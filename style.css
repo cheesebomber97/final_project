@@ -1,0 +1,96 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+@font-face {
+	font-family: "GroovyGhosties";
+	src: url("assets/GroovyGhosties.otf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+
+
+body {
+	background-color: cornsilk;
+}
+
+#header { grid-area: header;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-decoration: none;
+}
+
+#title {
+	font-family: GroovyGhosties;
+	font-size: 100px;
+	color: hotpink;
+	text-align: center;
+
+	text-decoration: none;
+}
+
+#menu { grid-area: menu;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main { grid-area: main;
+}
+
+#footer { grid-area: footer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: "Source Code Pro", monospace;
+	font-size: 5px;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+		'header header header'
+		'header header header'
+		'menu menu menu'
+		'main main main'
+		'main main main'
+		'main main main'
+		'main main main'
+		'footer footer footer';
+	gap:  10px;
+	padding: 10px;
+}
+.grid-container > div {
+	background-color: cornsilk;
+
+	justify-content: center;
+	align-items: center;
+	display: center;
+
+	padding: 20px 20px;
+
+	font-family: "Source Code Pro", monospace;
+	font-size: 25px;
+    text-align: center;
+
+    color: hotpink;
+}
+
+
+#leftbox {
+	float: left;
+	width: 50%;
+}
+
+#rightbox {
+	float: right;
+	width:  50%;
+
+	text-align: left;
+	font-size: 20px;
+}
